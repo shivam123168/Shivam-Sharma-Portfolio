@@ -124,8 +124,9 @@
         }
 
         .dropdown_menu {
-            display: none;
-            position: absolute;
+            display: block;
+            position: fixed;
+            z-index: 999;
             right: 6%;
             top: 80px;
             width: 220px;
@@ -885,7 +886,7 @@
         @media (max-width: 992px) {
             .nav-links { display: none; }
             .toggle_btn { display: block; }
-            .dropdown_menu { display: block; }
+            .dropdown_menu { display: none !important; }
             .about-grid { grid-template-columns: 1fr; gap: 48px; }
             .contact-grid { grid-template-columns: 1fr; gap: 48px; }
         }
