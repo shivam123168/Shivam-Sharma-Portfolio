@@ -4,320 +4,415 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHIVAM SHARMA</title>
-    <!-- --------------------boxicon-------------------- -->
-    <!-- -------------------------------socialmedia--------------------------- -->
-
+    <title>Shivam Sharma — Developer & AI Engineer</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-        <!-- -----------------scrollreveal-------------------- -->
-     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-
 </head>
 
 <body>
-    <!-- -------------------------------navbar------------------------------------ -->
-    <div id="header" class="navbaar">
-        <div class="contanier">
-            <nav>
-                <h1 class="logo"><span>Sh</span>ivam.</h1>
-                <ul class="navi">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#portfolio">My Work</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="toggle_btn">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-            </nav>
 
-            <div class="headertext" data-aos="blur-in" data-aos-delay="500">
-                <p>Frontend Web Devloper,Python(ai/ml),MySql</p>
-                <h1>Hi,I'm <span>Shivam</span><br> Sharma from India</h1>
-            </div>
-        </div>
-        <div class="dropdown_manue">
-
+    <!-- ============================
+         NAVBAR
+    ============================ -->
+    <nav class="navbar" id="navbar">
+        <a href="#header" class="logo"><span>Sh</span>ivam.</a>
+        <ul class="nav-links">
             <li><a href="#header">Home</a></li>
             <li><a href="#portfolio">My Work</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="toggle_btn" aria-label="Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
 
-        </div>
-
-
+    <div class="dropdown_menu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#portfolio">My Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
     </div>
 
-    <!-- ------------about section----------------- -->
+    <!-- ============================
+         HERO
+    ============================ -->
+    <div id="header">
+        <div class="hero-bg"></div>
+        <div class="hero-grid"></div>
 
-    <div id="about">
-        <div class="contaner">
-            <div class="row">
-                <div class="col1" data-aos="fade-right">
-                    <img src="images/shivaweb1.jpg" alt="I'm shivam">
+        <div class="hero-content" data-aos="blur-in" data-aos-delay="300">
+            <div class="hero-badge">Available for opportunities</div>
+            <h1 class="hero-title">
+                Hi, I'm<br>
+                <span class="accent">Shivam</span> <span class="outline">Sharma</span>
+            </h1>
+            <p class="hero-subtitle">
+                Frontend Developer &amp; Python AI/ML Engineer from India — building smart, purposeful digital experiences.
+            </p>
+            <div class="hero-cta">
+                <a href="#portfolio" class="btn-primary">View My Work</a>
+                <a href="#contact" class="btn-outline">Get In Touch</a>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+            scroll
+        </div>
+    </div>
+
+    <!-- ============================
+         ABOUT
+    ============================ -->
+    <section id="about" class="section">
+        <div class="section-label"><span>About Me</span></div>
+        <div class="about-grid">
+            <div class="about-img-wrap" data-aos="fade-right">
+                <img src="images/shivaweb1.jpg" alt="Shivam Sharma">
+            </div>
+            <div class="about-text" data-aos="fade-left">
+                <h2 class="section-title" style="margin-bottom:24px;">Passionate Developer<br>&amp; AI Enthusiast</h2>
+                <p>
+                    Hi, I'm <strong>Shivam Sharma</strong> 👋 — a passionate <strong>Python Developer</strong> and aspiring <strong>AI Engineer</strong> who loves solving real-world problems with technology.
+                </p>
+                <p>
+                    I have experience working with <strong>Python, HTML, CSS, JavaScript, and MySQL</strong>, and I enjoy building projects that combine clean code with smart design — from AI-powered assistants to full-stack web applications.
+                </p>
+                <p>
+                    My interests go beyond coding — I'm deeply curious about <strong>Artificial Intelligence, Machine Learning, and Robotics</strong>, and I dream of contributing to innovations that make life simpler and smarter.
+                </p>
+                <p>
+                    When I'm not coding, you'll find me exploring new technologies, meditating 🧘, or working on DIY projects. I believe in continuous learning, creativity, and building with purpose.
+                </p>
+                <p class="cta-line">🚀 Let's connect and create something amazing together!</p>
+
+                <div class="tab-nav">
+                    <button class="tab-btn active" onclick="openTab(event, 'Skill')">Skills</button>
+                    <button class="tab-btn" onclick="openTab(event, 'Experience')">Experience</button>
+                    <button class="tab-btn" onclick="openTab(event, 'Education')">Education</button>
                 </div>
-                <div class="col2" class="about-section" data-aos="fade-left">
-                    <h1 class="subtitle-about">About me</h1>
-                    <p>
-                        Hi, I’m <strong>Shivam Sharma</strong> 👋
-                        I’m a passionate <strong>Python Developer</strong> and aspiring <strong>AI Engineer</strong> who
-                        loves solving real-world problems with technology.
-                    </p>
-                    <p>
-                        I have experience working with <strong>Python, HTML, CSS, JavaScript, and MySQL</strong>, and I
-                        enjoy building
-                        projects that combine clean code with smart design. From developing AI-powered assistants to
-                        full-stack
-                        web applications, I’m always excited to turn ideas into impactful solutions.
-                    </p>
-                    <p>
-                        My interests go beyond coding — I’m deeply curious about <strong>Artificial Intelligence,
-                            Machine Learning, and Robotics</strong>,
-                        and I dream of contributing to innovations that make life simpler and smarter.
-                    </p>
-                    <p>
-                        When I’m not coding, you’ll find me exploring new technologies, meditating 🧘, or working on DIY
-                        projects.
-                        I believe in continuous learning, creativity, and building with purpose.
-                    </p>
-                    <p class="cta">
-                        🚀 Let’s connect and create something amazing together!
-                    </p>
 
-                    <div class="tabtitle">
-                        <div class="tablink actlink" onclick="opentab('Skill')">Skill</div>
-                        <div class="tablink" onclick="opentab('Expirence')">Expirence</div>
-                        <div class="tablink" onclick="opentab('Education')">Education</div>
-                    </div>
-
-                    <div class="tabcontent activecontent" id="Skill">
-                        <ul>
-                            <li><span>Python(AI/ML)</span><br>python(Basic),Tenserflow,numpy and etc</li>
-                            <li><span>web developer</span><br>Html,css,js</li>
-                            <li><span>Mysql</span><br>database generation</li>
-                        </ul>
-                    </div>
-                    <div class="tabcontent" id="Expirence">
-                        <ul>
-                            <li><span>Python(AI/ML)</span><br>I made two ai and ml base project </li>
-                            <li><span>web developer</span><br>I made one application and three website</li>
-                            <li><span>MySql</span><br>I made one database using Mysql</li>
-                        </ul>
-                    </div>
-                    <div class="tabcontent" id="Education">
-                        <ul>
-                            <li><span>Board(10th)</span><br>Secure 87.67%</li>
-                            <li><span>HSC(12th),Jee(Mains),CET</span><br>Secure 68.50%,71.97%,87.50%</li>
-                            <li><span>B.Tech</span><br>Studying in GCOEY College</li>
-                        </ul>
-                    </div>
+                <div class="tab-panel active" id="Skill">
+                    <ul class="skill-list">
+                        <li>
+                            <span class="skill-name">Python (AI/ML)</span>
+                            <span class="skill-desc">Python (Intermediate), TensorFlow, NumPy, and more</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">Web Development</span>
+                            <span class="skill-desc">HTML, CSS, JavaScript</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">MySQL</span>
+                            <span class="skill-desc">Database design, CRUD operations, MySQL Workbench</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-panel" id="Experience">
+                    <ul class="skill-list">
+                        <li>
+                            <span class="skill-name">Python (AI/ML)</span>
+                            <span class="skill-desc">Built two AI/ML-based projects including NIL AI and SAS</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">Web Development</span>
+                            <span class="skill-desc">Developed one web application and three websites</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">MySQL</span>
+                            <span class="skill-desc">Designed and managed one relational database project</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-panel" id="Education">
+                    <ul class="skill-list">
+                        <li>
+                            <span class="skill-name">Board (10th)</span>
+                            <span class="skill-desc">Secured 87.67%</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">HSC (12th) · JEE Mains · CET</span>
+                            <span class="skill-desc">Secured 68.50% · 71.97 percentile · 87.50 percentile</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">B.Tech</span>
+                            <span class="skill-desc">Currently studying at GCOEY College</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- -----------------------service----------------------- -->
+    <!-- ============================
+         SERVICES
+    ============================ -->
+    <section id="service" class="section">
+        <div class="section-label"><span>What I Do</span></div>
+        <h2 class="section-title">My Services</h2>
+        <div class="services-grid">
 
-    <div id="service">
-        <div class="contaner">
-            <h1 class="subtitle">My service</h1>
-            <div class="service-list">
-
-                <div class="card" data-aos="flip-right" >
-                    <span class="material-symbols-outlined" id="icon">
-                        code
+            <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="service-icon">
+                    <span class="material-symbols-outlined">code</span>
+                </div>
+                <h3>Frontend Web Development</h3>
+                <p>
+                    I build responsive, user-friendly interfaces using HTML, CSS, and JavaScript.
+                    <span class="more-text">
+                        Skilled in creating interactive layouts, forms, and dynamic elements — familiar with Bootstrap and Google Icons. I've developed real-world projects including portfolio websites, a restaurant website, a Hotel Management System, a Smart Attendance System, and other web-based applications.
                     </span>
-                    <h1>Frontend Web Dev</h1>
-                    <p id="desc">
-                        I have experience in making websites using HTML, CSS, and JavaScript.
-                        <span class="more-text" style="display:none;">
-                            Proficient in frontend web development with hands-on experience in building responsive and
-                            user-friendly interfaces using HTML, CSS, and JavaScript. Skilled in creating interactive
-                            layouts, forms, and dynamic elements, and familiar with frameworks and tools like Bootstrap
-                            and Google Icons. Experienced in developing real-world projects such as portfolio websites,
-                            restaurant website, Hotel Management System, Smart Attendance System and web-based
-                            applications with an ongoing focus on improving logic and
-                            backend integration.
-                        </span>
-                    </p>
+                </p>
+                <a class="learn-more">Learn more</a>
+            </div>
 
-                    <a class="learn-more">Learn more</a>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-icon">
+                    <span class="material-symbols-outlined">terminal</span>
                 </div>
-                <div class="card" data-aos="flip-right" >
-                    <span class="material-symbols-outlined" id="icon">
-                        terminal
+                <h3>Python · AI / ML</h3>
+                <p>
+                    I have experience building AI and ML-based applications like NIL AI and the Smart Attendance System.
+                    <span class="more-text">
+                        Proficient in Python with hands-on experience developing real-world projects including an AI-powered personal assistant, smart attendance system, and automated document generator. Skilled in Tkinter, ReportLab, PIL, and OS — familiar with MySQL integration, API usage, and basic AI/ML workflows.
                     </span>
-                    <h1>Python(AI/ML)</h1>
-                    <p>I also have expireance in making the ai and ml base application like NIl AI and Smart Attendance
-                        System.<span class="more-text" style="display:none;">
-                            Proficient in Python with hands-on experience developing real-world projects such as an
-                            AI-powered personal assistant, smart attendance system and automated document generator.
-                            Skilled in using libraries like Tkinter, ReportLab, PIL, and OS for automation, GUI
-                            development, and file handling. Familiar with MySQL integration, API usage and basic AI/ML
-                            workflows. Continuously improving logical problem-solving, object-oriented programming and
-                            multitasking capabilities for AI and automation projects.
-                        </span>
+                </p>
+                <a class="learn-more">Learn more</a>
+            </div>
 
-                    </p>
-                    <a class="learn-more">Learn more</a>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon">
+                    <span class="material-symbols-outlined">deployed_code</span>
                 </div>
-                <div class="card" data-aos="flip-right" >
-                    <span class="material-symbols-outlined" id="icon">
-                        deployed_code
+                <h3>MySQL</h3>
+                <p>
+                    Experienced in creating tables, connecting databases, and modifying data using both the terminal and MySQL Workbench.
+                    <span class="more-text">
+                        Knowledgeable in database creation, table design, and CRUD operations. Comfortable with SELECT, INSERT, UPDATE, and DELETE commands. Currently learning to integrate MySQL with backend technologies like Python using FastAPI.
                     </span>
-                    <h1>MySql</h1>
-                    <p>I have experieance in how the table made,connect and modify using both terminal and Mysql
-                        Software.<span class="more-text" style="display:none;">
-                            Basic knowledge of MySQL, including database creation, table design, and performing CRUD
-                            operations using queries. Familiar with SQL commands such as SELECT, INSERT, UPDATE, and
-                            DELETE, and comfortable working with MySQL Workbench for managing and analyzing data.
-                            Currently learning to integrate MySQL with backend technologies like Python using FastAPI.
-                        </span></p>
-                    <a class="learn-more">Learn more</a>
-                </div>
+                </p>
+                <a class="learn-more">Learn more</a>
             </div>
 
         </div>
-    </div>
+    </section>
 
-    <!-- ------------------portfolio--------------- -->
+    <!-- ============================
+         PORTFOLIO
+    ============================ -->
+    <section id="portfolio" class="section">
+        <div class="section-label"><span>Portfolio</span></div>
+        <h2 class="section-title">My Work</h2>
+        <div class="portfolio-grid" data-aos="fade-up">
 
-    <div id="portfolio">
-        <div class="contaner">
-            <div class="subtitle"> My work </div>
-            <div class="work-list" data-aos="fade-up">
-                <div class="work">
-                    <a href="https://github.com/shivam123168/NIL-AI">
-                        <img src="images/nilai.png">
-                        <div class="layer">
-                            <h3>Nil AI</h3>
-                            <h5>Type:DeskTop Application</h5>
-                            <span class="more-info" style="display:none;">An intelligent personal assistant.</span>
-                            <a class="learnmore">learn more</a>
-                            <!-- <p>It is a talking ai personal assistant</p> -->
-                        </div>
+            <a href="https://github.com/shivam123168/NIL-AI" class="project-card" target="_blank" rel="noopener">
+                <div class="project-img-wrap">
+                    <img src="images/nilai.png" alt="NIL AI" class="project-img">
+                </div>
+                <div class="project-body">
+                    <div class="project-type">Desktop Application</div>
+                    <div class="project-title">NIL AI</div>
+                    <p class="project-desc">An intelligent AI-powered personal voice assistant built with Python.</p>
+                    <div class="project-link"><i class='bx bxl-github'></i> View on GitHub</div>
+                </div>
+            </a>
+
+            <a href="https://github.com/shivam123168/SAS-Smart-Attendance-System-Using-AI" class="project-card" target="_blank" rel="noopener">
+                <div class="project-img-wrap">
+                    <img src="images/sas.png" alt="SAS Smart Attendance System" class="project-img">
+                </div>
+                <div class="project-body">
+                    <div class="project-type">Web-Based · AI/ML</div>
+                    <div class="project-title">SAS — Smart Attendance System</div>
+                    <p class="project-desc">Face-recognition-based smart attendance system.</p>
+                    <div class="project-link"><i class='bx bxl-github'></i> View on GitHub</div>
+                </div>
+            </a>
+
+            <a href="https://github.com/shivam123168/Small-Project-TC-Generator" class="project-card" target="_blank" rel="noopener">
+                <div class="project-img-wrap">
+                    <img src="images/tcgenerator.png" alt="TC Generator" class="project-img">
+                </div>
+                <div class="project-body">
+                    <div class="project-type">Desktop Application</div>
+                    <div class="project-title">TC Generator</div>
+                    <p class="project-desc">An automated transfer certificate generator for colleges.</p>
+                    <div class="project-link"><i class='bx bxl-github'></i> View on GitHub</div>
+                </div>
+            </a>
+
+            <a href="https://github.com/shivam123168/small-project-agri-stack-app-farmer-id-generator" class="project-card" target="_blank" rel="noopener">
+                <div class="project-img-wrap">
+                    <img src="images/agristack.png" alt="AgriStack" class="project-img">
+                </div>
+                <div class="project-body">
+                    <div class="project-type">Desktop Application</div>
+                    <div class="project-title">AgriStack</div>
+                    <p class="project-desc">A farmer AgriStack card generator application.</p>
+                    <div class="project-link"><i class='bx bxl-github'></i> View on GitHub</div>
+                </div>
+            </a>
+
+            <a href="https://github.com/shivam123168/HMS-hotel-Management-system-by-shivam-sharma/tree/main" class="project-card" target="_blank" rel="noopener">
+                <div class="project-img-wrap">
+                    <img src="images/hms.png" alt="HMS Hotel Management System" class="project-img">
+                </div>
+                <div class="project-body">
+                    <div class="project-type">Web-Based · In Progress</div>
+                    <div class="project-title">HMS — Hotel Management System</div>
+                    <p class="project-desc">A comprehensive hotel management system (currently in development).</p>
+                    <div class="project-link"><i class='bx bxl-github'></i> View on GitHub</div>
+                </div>
+            </a>
+
+            <a href="https://github.com/shivam123168/MantriBrother-Resturant-Website" class="project-card" target="_blank" rel="noopener">
+                <div class="project-img-wrap">
+                    <img src="images/mantribrother.png" alt="MantriBrother Restaurant Website" class="project-img">
+                </div>
+                <div class="project-body">
+                    <div class="project-type">Web-Based · Frontend</div>
+                    <div class="project-title">MantriBrother Restaurant</div>
+                    <p class="project-desc">A restaurant website built with HTML, CSS, JS and localStorage.</p>
+                    <div class="project-link"><i class='bx bxl-github'></i> View on GitHub</div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- ============================
+         CONTACT
+    ============================ -->
+    <section id="contact" class="section">
+        <div class="section-label"><span>Contact</span></div>
+        <div class="contact-grid">
+            <div class="contact-info" data-aos="fade-right">
+                <h2 class="section-title" style="margin-bottom:16px;">Let's Work<br>Together</h2>
+                <p>Have a project in mind or want to collaborate? I'd love to hear from you.</p>
+
+                <div class="contact-item">
+                    <i class='bx bx-envelope'></i>
+                    <span>sharmas6147@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class='bx bx-phone-call'></i>
+                    <span>+91 91561 37160</span>
+                </div>
+
+                <div class="social-row">
+                    <a href="https://github.com/shivam123168" class="social-btn" target="_blank" rel="noopener" title="GitHub">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://chat.whatsapp.com/GEkGrNHbawb91ils75FrU8" class="social-btn" target="_blank" rel="noopener" title="WhatsApp">
+                        <i class='bx bxl-whatsapp'></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shivam-sharma362004/" class="social-btn" target="_blank" rel="noopener" title="LinkedIn">
+                        <i class='bx bxl-linkedin'></i>
                     </a>
                 </div>
-                <div class="work" >
-                    <a href="https://github.com/shivam123168/SAS-Smart-Attendance-System-Using-AI">
-                        <img src="images/sas.png">
-                        <div class="layer">
-                            <h3>SAS</h3>
-                            <h5>Type:Web Base</h5>
-                            <span class="more-info" style="display:none;">Smart Attendance System(face-recognition base).</span>
-                            <a class="learnmore" >learn more</a>
-                            <!-- <p>Ml base Attendance System</p> -->
-                        </div>
-                    </a>
-                </div>
-                <div class="work">
-                    <a href="https://github.com/shivam123168/Small-Project-TC-Generator">
-                        <img src="images/tcgenerator.png">
-                        <div class="layer">
-                            <h3>Tc Generator</h3>
-                            <h5>Type:DeskTop Application</h5>
-                            <span class="more-info" style="display:none;">College Tc Generator Project.</span>
-                            <a class="learnmore">learn
-                                more</a>
-                            <!-- <p>It is a Tc generator.</p> -->
-                        </div>
-                    </a>
-                </div>
-                <div class="work">
-                    <a href="https://github.com/shivam123168/small-project-agri-stack-app-farmer-id-generator">
-                        <img src="images/agristack.png">
-                        <div class="layer">
-                            <h3>AgriStack</h3>
-                            <h5>Type:DeskTop Application</h5>
-                            <span class="more-info" style="display:none;">A Farmer AgriStack Card Generator.</span>
-                            <a class="learnmore" >learn more</a>
-                            <!-- <p>It is a Farmer Card Generator.</p> -->
-                        </div>
-                    </a>
-                </div>
-                <div class="work">
-                    <a href="https://github.com/shivam123168/HMS-hotel-Management-system-by-shivam-sharma/tree/main">
-                        <img src="images/hms.png">
-                        <div class="layer">
-                            <h3>HMS</h3>
-                            <h5>Type:Web Base</h5>
-                            <span class="more-info" style="display:none;">A Hotel Management System(In Building Process).</span>
-                            <a  class="learnmore" >learn more</a>
-                            <!-- <p>Hotel Management System(in building process)</p> -->
-                        </div>
-                    </a>
-                </div>
-                <div class="work">
-                    <a href="https://github.com/shivam123168/MantriBrother-Resturant-Website">
-                        <img src="images/mantribrother.png">
-                        <div class="layer">
-                            <h3>MantriBrother</h3>
-                            <h5>Type:Web Base</h5>
-                            <span class="more-info" style="display:none;">A Restaurant Website Work On HTML,CSS and Js only with js localstroge.</span>
-                            <a href="#" class="learnmore" >learn more</a>
-                            <!-- <p>It is a frontend restaur website</p> -->
-                        </div>
+
+                <div class="resume-btn">
+                    <a href="document/shivam_sharma_sharmas6147_gmail_com__resume (4).pdf" class="btn-primary" download>
+                        <i class='bx bx-download'></i> Download Resume
                     </a>
                 </div>
             </div>
 
-
-        </div>
-    </div>
-
-    <!-- -------------contact------------------ -->
-
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left" data-aos="fade-up">
-                    <h1 class="sub-title">Contact me</h1>
-                    <p><i class='bx bx-envelope'></i> sharmas6147@gmail.com</p>
-                    <p><i class='bx bx-phone-call'></i> +91 9156137160</p>
-                    <div class="social-icons">
-                        <a href="https://github.com/shivam123168"><i class='bx bxl-github' id="purple"></i></a>
-                        <a href="https://chat.whatsapp.com/GEkGrNHbawb91ils75FrU8"><i class='bx bxl-whatsapp'
-                                id="green"></i></a>
-                        <a href="https://www.linkedin.com/in/shivam-sharma362004/"><i class='bx bxl-linkedin'
-                                id="blue"></i></a>
+            <div class="contact-form" data-aos="fade-left">
+                <form name="submit-to-google-sheet" action="https://formspree.io/f/xqawadwb" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Shivam Sharma" required>
                     </div>
-                    <a href="document/shivam_sharma_sharmas6147_gmail_com__resume (4).pdf" class="btn btncv"
-                        download>Download Resume</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet" action="https://formspree.io/f/xqawadwb" method="POST">
-                        <input type="text" name="name" placeholder="your name" required>
-                        <input type="email" name="email" placeholder="your email" required>
-                        <textarea name="Message" rows="6" placeholder="your message"></textarea>
-                        <button type="submit" class="btn btncv">Submit</button>
-
-                    </form>
-                </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="hello@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="Message" rows="5" placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">
+                        Send Message <i class='bx bx-send'></i>
+                    </button>
+                </form>
             </div>
+        </div>
+    </section>
 
-        </div>
-        <div class="copyright">
-            <p>Copyright © Shivam.Made with the Shivam Sharma</p>
-        </div>
-    </div>
-     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="text/javascript" src="javascript.js"></script>
+    <!-- ============================
+         FOOTER
+    ============================ -->
+    <footer class="footer">
+        <p>© 2024 <span>Shivam Sharma</span> — Designed &amp; Built with ❤️ in India</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // AOS Init
+        AOS.init({ duration: 900, once: false });
+
+        // Navbar toggle
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleIcon = document.querySelector('.toggle_btn i');
+        const dropMenu = document.querySelector('.dropdown_menu');
+
+        toggleBtn.onclick = function () {
+            dropMenu.classList.toggle('open');
+            const isOpen = dropMenu.classList.contains('open');
+            toggleIcon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+        };
+
+        // Close dropdown on link click
+        document.querySelectorAll('.dropdown_menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                dropMenu.classList.remove('open');
+                toggleIcon.className = 'fa-solid fa-bars';
+            });
+        });
+
+        // About tabs
+        function openTab(event, tabId) {
+            document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+
+        // Learn more toggle (services)
+        document.querySelectorAll('.learn-more').forEach(btn => {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                const card = this.closest('.service-card');
+                const more = card.querySelector('.more-text');
+                if (more.style.display === 'none' || more.style.display === '') {
+                    more.style.display = 'inline';
+                    this.textContent = 'Show less';
+                } else {
+                    more.style.display = 'none';
+                    this.textContent = 'Learn more';
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 60) {
+                navbar.style.background = 'rgba(6,7,10,0.97)';
+            } else {
+                navbar.style.background = 'rgba(6,7,10,0.8)';
+            }
+        });
+    </script>
 </body>
-
-
 </html>
-
-
-
-
-
-
